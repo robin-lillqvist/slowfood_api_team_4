@@ -24,7 +24,7 @@ class DeviseTokenAuthCreateUsers < ActiveRecord::Migration[6.0]
       t.string   :unconfirmed_email 
       
 
-  
+      
       t.string :email
       t.integer :sign_in_count, default: 0
       t.datetime :current_sign_in_at
