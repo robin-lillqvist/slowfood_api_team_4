@@ -1,25 +1,18 @@
 RSpec.describe Api::V1::ProductsController, type: :request do
-    RSpec.describe Api::V1::PerformanceDataController, type: :request do
-        let(:headers) { { HTTP_ACCEPT: 'application/json' } }
+   
+        let!(:products) { 5.times {create(:products)  } }
       
-        describe 'POST /api/v1/performance_data' do
+        describe 'GET /api/v1/products' do
           before do
-            post '/api/v1/performance_data',
-                params: {
-                  performance_data: {
-                    data: { message: 'Average' }
-                  }
-                },
-                headers: headers
+            get 'api/v1/products'
           end
       
           it 'returns a 200 response status' do
             expect(response).to have_http_status 200
           end
       
-          it 'successfully creates a data entry' do
-            entry = PerformanceData.last
-            expect(entry.data).to eq 'message' => 'Average'
+          it 'returns 5 products' do
+            expect(JSON.parse(response.body)["products"].count).to eq 5
           end
         end
       end
