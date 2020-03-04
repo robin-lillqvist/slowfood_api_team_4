@@ -4,7 +4,7 @@ RSpec.describe Api::V1::ProductsController, type: :request do
       
         describe 'GET /products' do
           before do
-            get 'api/v1/products'
+            get '/api/v1/products'
           end
       
           it 'returns a 200 response status' do
