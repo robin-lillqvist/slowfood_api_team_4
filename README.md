@@ -22,3 +22,7 @@
 #### Deployment instructions
 * Deploy to service like Heroku etc.
 * Link frontend to deployed service url
+
+#### Deployment
+* This application is deployed at https://slowfood-group4.herokuapp.com/
+* Interactable by going to https://slowfoodchallenge.netlify.app
