@@ -1,26 +1,24 @@
-# README
+# Slowfood API
 
-Slowfood API
+#### Ruby version.  
+* 2.5.1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### System dependencies
+* coveralls
+* pry-rails
+* pry-byebug
+* devise
+* postgres
 
-Things you may want to cover:
+#### Database creation
+```rails db:create```
 
-* Ruby version
+#### Database initialization
+```rails db:migrate db:seed```
 
-* System dependencies
+#### How to run the test suite
+```rspec```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-
+#### Deployment instructions
+* Deploy to service like Heroku etc.
+* Link frontend to deployed service url
