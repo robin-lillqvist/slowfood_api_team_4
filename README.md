@@ -9,6 +9,7 @@
 * pry-byebug
 * devise
 * postgres
+* rspec
 
 #### Database creation
 ```rails db:create```
